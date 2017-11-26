@@ -34,23 +34,23 @@
             this.Ime = new System.Windows.Forms.TextBox();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.CBGeneracija = new System.Windows.Forms.ComboBox();
             this.CBOdeljenje = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.SaveButton = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.TopPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Prezime
             // 
             this.Prezime.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Prezime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Prezime.Font = new System.Drawing.Font("Franklin Gothic Demi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Prezime.Location = new System.Drawing.Point(221, 216);
             this.Prezime.Name = "Prezime";
-            this.Prezime.Size = new System.Drawing.Size(121, 29);
+            this.Prezime.Size = new System.Drawing.Size(121, 26);
             this.Prezime.TabIndex = 14;
             // 
             // label4
@@ -78,10 +78,10 @@
             // Ime
             // 
             this.Ime.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Ime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ime.Font = new System.Drawing.Font("Franklin Gothic Demi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ime.Location = new System.Drawing.Point(55, 216);
             this.Ime.Name = "Ime";
-            this.Ime.Size = new System.Drawing.Size(121, 29);
+            this.Ime.Size = new System.Drawing.Size(121, 26);
             this.Ime.TabIndex = 3;
             this.Ime.TextChanged += new System.EventHandler(this.Ime_TextChanged);
             // 
@@ -107,6 +107,14 @@
             this.label1.Size = new System.Drawing.Size(224, 21);
             this.label1.TabIndex = 9;
             this.label1.Text = "Dodaj novog ucenika";
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.images1;
+            this.panel2.Location = new System.Drawing.Point(-19, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(300, 142);
+            this.panel2.TabIndex = 0;
             // 
             // label2
             // 
@@ -165,6 +173,7 @@
             // 
             this.SaveButton.BackColor = System.Drawing.SystemColors.Window;
             this.SaveButton.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.icons8_save_50;
+            this.SaveButton.Font = new System.Drawing.Font("Franklin Gothic Demi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.SaveButton.Location = new System.Drawing.Point(388, 216);
             this.SaveButton.Name = "SaveButton";
@@ -172,14 +181,6 @@
             this.SaveButton.TabIndex = 21;
             this.SaveButton.UseVisualStyleBackColor = false;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.images1;
-            this.panel2.Location = new System.Drawing.Point(-19, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 142);
-            this.panel2.TabIndex = 0;
             // 
             // Form2
             // 

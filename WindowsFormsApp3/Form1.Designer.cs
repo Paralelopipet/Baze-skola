@@ -47,6 +47,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.DodajUcenikaB = new System.Windows.Forms.Button();
             this.PrikazTabele = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             this.SidePanel.SuspendLayout();
             this.TopPanel.SuspendLayout();
@@ -56,18 +57,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.Location = new System.Drawing.Point(20, 193);
+            label1.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.Location = new System.Drawing.Point(20, 202);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(105, 17);
+            label1.Size = new System.Drawing.Size(117, 17);
             label1.TabIndex = 10;
-            label1.Text = "Sort po generaciji";
+            label1.Text = "Odaberi generaciju";
             // 
             // Search
             // 
             this.Search.BackColor = System.Drawing.SystemColors.Menu;
             this.Search.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search.Location = new System.Drawing.Point(95, 252);
+            this.Search.Location = new System.Drawing.Point(95, 293);
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(81, 35);
             this.Search.TabIndex = 0;
@@ -77,10 +78,11 @@
             // 
             // CBGeneracija
             // 
+            this.CBGeneracija.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CBGeneracija.FormattingEnabled = true;
-            this.CBGeneracija.Location = new System.Drawing.Point(13, 225);
+            this.CBGeneracija.Location = new System.Drawing.Point(13, 234);
             this.CBGeneracija.Name = "CBGeneracija";
-            this.CBGeneracija.Size = new System.Drawing.Size(121, 21);
+            this.CBGeneracija.Size = new System.Drawing.Size(121, 25);
             this.CBGeneracija.TabIndex = 2;
             this.CBGeneracija.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -89,19 +91,20 @@
             this.Ime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Ime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ime.Location = new System.Drawing.Point(13, 148);
+            this.Ime.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ime.Location = new System.Drawing.Point(13, 157);
             this.Ime.Name = "Ime";
-            this.Ime.Size = new System.Drawing.Size(121, 29);
+            this.Ime.Size = new System.Drawing.Size(124, 22);
             this.Ime.TabIndex = 3;
             this.Ime.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // CBOdeljenje
             // 
+            this.CBOdeljenje.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CBOdeljenje.FormattingEnabled = true;
-            this.CBOdeljenje.Location = new System.Drawing.Point(140, 225);
+            this.CBOdeljenje.Location = new System.Drawing.Point(140, 234);
             this.CBOdeljenje.Name = "CBOdeljenje";
-            this.CBOdeljenje.Size = new System.Drawing.Size(121, 21);
+            this.CBOdeljenje.Size = new System.Drawing.Size(121, 25);
             this.CBOdeljenje.TabIndex = 4;
             this.CBOdeljenje.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -109,11 +112,12 @@
             // 
             this.SortPrezime.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SortPrezime.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.SortPrezime.Location = new System.Drawing.Point(14, 41);
+            this.SortPrezime.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SortPrezime.Location = new System.Drawing.Point(13, 70);
             this.SortPrezime.Name = "SortPrezime";
-            this.SortPrezime.Size = new System.Drawing.Size(75, 23);
+            this.SortPrezime.Size = new System.Drawing.Size(87, 23);
             this.SortPrezime.TabIndex = 5;
-            this.SortPrezime.Text = "Prezime";
+            this.SortPrezime.Text = "Prezimenu";
             this.SortPrezime.UseVisualStyleBackColor = true;
             this.SortPrezime.Click += new System.EventHandler(this.SortPrezime_Click);
             // 
@@ -121,11 +125,12 @@
             // 
             this.SortIme.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SortIme.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.SortIme.Location = new System.Drawing.Point(95, 41);
+            this.SortIme.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SortIme.Location = new System.Drawing.Point(106, 70);
             this.SortIme.Name = "SortIme";
-            this.SortIme.Size = new System.Drawing.Size(75, 23);
+            this.SortIme.Size = new System.Drawing.Size(87, 23);
             this.SortIme.TabIndex = 6;
-            this.SortIme.Text = "Ime";
+            this.SortIme.Text = "Imenu";
             this.SortIme.UseVisualStyleBackColor = true;
             this.SortIme.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -133,9 +138,10 @@
             // 
             this.OpadajuceRastuce.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OpadajuceRastuce.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.OpadajuceRastuce.Location = new System.Drawing.Point(176, 41);
+            this.OpadajuceRastuce.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OpadajuceRastuce.Location = new System.Drawing.Point(199, 70);
             this.OpadajuceRastuce.Name = "OpadajuceRastuce";
-            this.OpadajuceRastuce.Size = new System.Drawing.Size(75, 23);
+            this.OpadajuceRastuce.Size = new System.Drawing.Size(80, 23);
             this.OpadajuceRastuce.TabIndex = 7;
             this.OpadajuceRastuce.Text = "Opadajuce";
             this.OpadajuceRastuce.UseVisualStyleBackColor = true;
@@ -144,16 +150,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(150, 193);
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(150, 202);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 17);
+            this.label2.Size = new System.Drawing.Size(107, 17);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Sort po odeljenju";
+            this.label2.Text = "Odaberi odeljenje";
             // 
             // SidePanel
             // 
             this.SidePanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.SidePanel.Controls.Add(this.label7);
             this.SidePanel.Controls.Add(this.Prezime);
             this.SidePanel.Controls.Add(this.label4);
             this.SidePanel.Controls.Add(this.label3);
@@ -169,7 +176,7 @@
             this.SidePanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.SidePanel.Location = new System.Drawing.Point(0, 137);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(281, 547);
+            this.SidePanel.Size = new System.Drawing.Size(289, 547);
             this.SidePanel.TabIndex = 12;
             // 
             // Prezime
@@ -177,27 +184,29 @@
             this.Prezime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Prezime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Prezime.Location = new System.Drawing.Point(140, 148);
+            this.Prezime.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Prezime.Location = new System.Drawing.Point(143, 157);
             this.Prezime.Name = "Prezime";
-            this.Prezime.Size = new System.Drawing.Size(121, 29);
+            this.Prezime.Size = new System.Drawing.Size(121, 22);
             this.Prezime.TabIndex = 14;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(173, 123);
+            this.label4.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(173, 132);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.Size = new System.Drawing.Size(56, 17);
             this.label4.TabIndex = 13;
             this.label4.Text = "Prezime";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(65, 123);
+            this.label3.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(65, 132);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 13);
+            this.label3.Size = new System.Drawing.Size(30, 17);
             this.label3.TabIndex = 12;
             this.label3.Text = "Ime";
             // 
@@ -238,7 +247,7 @@
             this.panel1.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.images1;
             this.panel1.Location = new System.Drawing.Point(-19, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 142);
+            this.panel1.Size = new System.Drawing.Size(308, 142);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -265,6 +274,16 @@
             this.PrikazTabele.Size = new System.Drawing.Size(696, 470);
             this.PrikazTabele.TabIndex = 14;
             this.PrikazTabele.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PrikazTabele_CellContentClick);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Franklin Gothic Demi", 13.75F, System.Drawing.FontStyle.Italic);
+            this.label7.Location = new System.Drawing.Point(91, 31);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(102, 24);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Sortiraj po:";
             // 
             // Form1
             // 
@@ -309,6 +328,7 @@
         private System.Windows.Forms.TextBox Prezime;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
     }
 }
 
