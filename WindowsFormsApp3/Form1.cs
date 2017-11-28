@@ -15,7 +15,7 @@ namespace WindowsFormsApp3
         static string defaultOdl = "Odeljenje ";
         string sortBy = "Ime";
         string sortWay = "ASC";
-        string sql = "SELECT Ime, Prezime, Generacija, Odeljenje.Naziv  FROM Ucenici INNER JOIN Odeljenje ON Odeljenje.ID = Ucenici.IDOdeljenja";
+        string sql = "SELECT Ime, Prezime, Generacija, Odeljenje.Naziv AS Odeljenje  FROM Ucenici INNER JOIN Odeljenje ON Odeljenje.ID = Ucenici.IDOdeljenja";
 
         public Form1()
         {
@@ -47,7 +47,7 @@ namespace WindowsFormsApp3
 
                 }
             }
-            sql = "SELECT Ime, Prezime, Generacija, Odeljenje.Naziv  FROM Ucenici INNER JOIN Odeljenje ON Odeljenje.ID = Ucenici.IDOdeljenja WHERE ";
+            sql = "SELECT Ime, Prezime, Generacija, Odeljenje.Naziv AS Odeljenje  FROM Ucenici INNER JOIN Odeljenje ON Odeljenje.ID = Ucenici.IDOdeljenja WHERE ";
             sql += ime+ "AND" + prezime + "AND" + generacija + "AND" + odeljenje;
             
             Trazi();
@@ -226,11 +226,13 @@ namespace WindowsFormsApp3
         {
             List<String> row = new List<String>();
             int s = e.RowIndex;
-            for (int i=0; i<4;i++ )
+            if (s != null)
+            { 
+            for (int i = 0; i < 4; i++)
             {
                 row.Add(myTable.Rows[s][i].ToString().Replace("  ", ""));
             }
-            
+            }
             MessageBox.Show(row[0] + " " + row[1]);
             
         }
