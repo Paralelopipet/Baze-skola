@@ -76,6 +76,8 @@ namespace WindowsFormsApp3
             CBGeneracija.SelectedIndex = 0;
             CBOdeljenje.Items.Add(defaultOdl);
             CBOdeljenje.SelectedIndex = 0;
+            Form3 form3 = new Form3();
+            form3.Show();
             LoadCBGen();
             Trazi();
         }
