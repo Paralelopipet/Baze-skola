@@ -13,10 +13,9 @@ namespace WindowsFormsApp3
         string connectionString = "Data Source=NAJKOMP\\DATA;Initial Catalog=Skola;Integrated Security=True";
         public static string defaultGen = "Generacija ";
         static string defaultOdl = "Odeljenje ";
-        string sortBy = "Ime";
+        string sortBy = "Ucenici.Ime";
         string sortWay = "ASC";
-        string sql = "SELECT Ime, Prezime, Generacija, Odeljenje.Naziv AS Odeljenje  FROM Ucenici INNER JOIN Odeljenje ON Odeljenje.ID = Ucenici.IDOdeljenja";
-
+        public string sql = "SELECT Sifra, Ucenici.Ime, Prezime, Generacija, Odeljenje.Naziv as Odeljenje, Count(Fajlovi.id) as Broj_Fajlova FROM Ucenici LEFT JOIN (VezeUc INNER JOIN Fajlovi on VezeUC.IDFajl=Fajlovi.ID) ON Ucenici.Sifra=VezeUc.SifraUc INNER JOIN Odeljenje ON Odeljenje.ID = Ucenici.IDOdeljenja GROUP BY Ucenici.Ime, Ucenici.Sifra, Prezime, Generacija, Odeljenje.Naziv";
         public Form1()
         {
             InitializeComponent();
@@ -32,7 +31,7 @@ namespace WindowsFormsApp3
             string odeljenje = " 1=1 ";
             if(!(Ime.Text==""))
             {
-                ime = " Ime='"+Ime.Text+"' ";
+                ime = " Ucenici.Ime='"+Ime.Text+"' ";
             }
             if (!(Prezime.Text == ""))
             {
@@ -47,7 +46,7 @@ namespace WindowsFormsApp3
 
                 }
             }
-            sql = "SELECT Ime, Prezime, Generacija, Odeljenje.Naziv AS Odeljenje  FROM Ucenici INNER JOIN Odeljenje ON Odeljenje.ID = Ucenici.IDOdeljenja WHERE ";
+            sql = "SELECT Sifra, Ucenici.Ime, Prezime, Generacija, Odeljenje.Naziv as Odeljenje, Count(Fajlovi.id) AS Broj_Fajlova FROM Ucenici LEFT JOIN (VezeUc INNER JOIN Fajlovi on VezeUC.IDFajl=Fajlovi.ID) ON Ucenici.Sifra=VezeUc.SifraUc INNER JOIN Odeljenje ON Odeljenje.ID = Ucenici.IDOdeljenja GROUP BY Ucenici.Ime,Ucenici.Sifra,Prezime, Generacija, Odeljenje.Naziv having";
             sql += ime+ "AND" + prezime + "AND" + generacija + "AND" + odeljenje;
             
             Trazi();
@@ -66,18 +65,15 @@ namespace WindowsFormsApp3
         {
 
         }
-        private void Form1_Shown(object sender, EventArgs e)
-        {
-            
-        }
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             CBGeneracija.Items.Add(defaultGen);
             CBGeneracija.SelectedIndex = 0;
             CBOdeljenje.Items.Add(defaultOdl);
             CBOdeljenje.SelectedIndex = 0;
-            //LoadCBGen();
-            //Trazi();
+            LoadCBGen();
+            Trazi();
         }
         public void Trazi()
         {
@@ -90,6 +86,7 @@ namespace WindowsFormsApp3
                 myTable = new DataTable();
                 adapter.Fill(myTable);
                 PrikazTabele.DataSource = myTable;
+                PrikazTabele.Columns["Sifra"].Visible = false;
                 connection.Close();
 
             }
@@ -212,20 +209,21 @@ namespace WindowsFormsApp3
             int s = e.RowIndex;
             if (s != null)
             { 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 5; i++)
             {
-                row.Add(myTable.Rows[s][i].ToString().Replace("  ", ""));
+                row.Add(myTable.Rows[s][i].ToString().Replace(" ", ""));
             }
             }
-            MessageBox.Show(row[0] + " " + row[1]);
             
+            Form3 form3 = new Form3(row);
+            form3.ShowDialog();
+            this.OnLoad(e);
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
-            form3.Show();
-            this.OnLoad(e);
+            
         }
     }
 }

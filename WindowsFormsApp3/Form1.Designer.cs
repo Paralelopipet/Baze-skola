@@ -325,7 +325,7 @@
             this.Name = "Form1";
             this.Text = "Korisnicki interfejs";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.Shown += new System.EventHandler(this.Form1_Shown);
+            
             this.SidePanel.ResumeLayout(false);
             this.SidePanel.PerformLayout();
             this.TopPanel.ResumeLayout(false);

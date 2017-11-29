@@ -43,6 +43,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Generacija = new System.Windows.Forms.TextBox();
+            this.SviFajlovi = new System.Windows.Forms.ListBox();
+            this.Sacuvaj = new System.Windows.Forms.Button();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +57,7 @@
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(800, 137);
+            this.TopPanel.Size = new System.Drawing.Size(946, 137);
             this.TopPanel.TabIndex = 15;
             // 
             // ImePanel
@@ -84,7 +86,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
             // 
             // button1
@@ -128,7 +129,7 @@
             this.Prezime.Font = new System.Drawing.Font("Franklin Gothic Demi", 15F, System.Drawing.FontStyle.Italic);
             this.Prezime.Location = new System.Drawing.Point(547, 219);
             this.Prezime.Name = "Prezime";
-            this.Prezime.Size = new System.Drawing.Size(121, 30);
+            this.Prezime.Size = new System.Drawing.Size(172, 30);
             this.Prezime.TabIndex = 27;
             // 
             // label4
@@ -159,7 +160,7 @@
             this.Ime.Font = new System.Drawing.Font("Franklin Gothic Demi", 15F, System.Drawing.FontStyle.Italic);
             this.Ime.Location = new System.Drawing.Point(369, 219);
             this.Ime.Name = "Ime";
-            this.Ime.Size = new System.Drawing.Size(124, 30);
+            this.Ime.Size = new System.Drawing.Size(270, 30);
             this.Ime.TabIndex = 21;
             // 
             // Odeljenje
@@ -170,7 +171,7 @@
             this.Odeljenje.Font = new System.Drawing.Font("Franklin Gothic Demi", 15F, System.Drawing.FontStyle.Italic);
             this.Odeljenje.Location = new System.Drawing.Point(547, 381);
             this.Odeljenje.Name = "Odeljenje";
-            this.Odeljenje.Size = new System.Drawing.Size(121, 30);
+            this.Odeljenje.Size = new System.Drawing.Size(172, 30);
             this.Odeljenje.TabIndex = 31;
             // 
             // label1
@@ -201,14 +202,36 @@
             this.Generacija.Font = new System.Drawing.Font("Franklin Gothic Demi", 15F, System.Drawing.FontStyle.Italic);
             this.Generacija.Location = new System.Drawing.Point(369, 381);
             this.Generacija.Name = "Generacija";
-            this.Generacija.Size = new System.Drawing.Size(124, 30);
+            this.Generacija.Size = new System.Drawing.Size(270, 30);
             this.Generacija.TabIndex = 28;
+            // 
+            // SviFajlovi
+            // 
+            this.SviFajlovi.FormattingEnabled = true;
+            this.SviFajlovi.ItemHeight = 20;
+            this.SviFajlovi.Location = new System.Drawing.Point(759, 219);
+            this.SviFajlovi.Name = "SviFajlovi";
+            this.SviFajlovi.Size = new System.Drawing.Size(175, 204);
+            this.SviFajlovi.TabIndex = 32;
+            this.SviFajlovi.SelectedIndexChanged += new System.EventHandler(this.SviFajlovi_SelectedIndexChanged);
+            // 
+            // Sacuvaj
+            // 
+            this.Sacuvaj.Location = new System.Drawing.Point(422, 488);
+            this.Sacuvaj.Name = "Sacuvaj";
+            this.Sacuvaj.Size = new System.Drawing.Size(148, 39);
+            this.Sacuvaj.TabIndex = 33;
+            this.Sacuvaj.Text = "Sacuvaj";
+            this.Sacuvaj.UseVisualStyleBackColor = true;
+            this.Sacuvaj.Click += new System.EventHandler(this.Sacuvaj_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 629);
+            this.ClientSize = new System.Drawing.Size(946, 679);
+            this.Controls.Add(this.Sacuvaj);
+            this.Controls.Add(this.SviFajlovi);
             this.Controls.Add(this.Odeljenje);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -252,5 +275,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Generacija;
+        private System.Windows.Forms.ListBox SviFajlovi;
+        private System.Windows.Forms.Button Sacuvaj;
     }
 }
