@@ -15,6 +15,7 @@ namespace WindowsFormsApp3
     {
         public Form3()
         {
+
             InitializeComponent();
         }
 
@@ -26,6 +27,16 @@ namespace WindowsFormsApp3
         private void Form3_Load(object sender, EventArgs e)
         {
 
+            //treba da prikazuje ime i prezime kako bi lakse spazio ako imas vise otvorenih formi sta znam
+            string imepanel;
+            ImePanel.Text = "Ime Prezime";
+            if (Ime.Text != "" && Prezime.Text != "")
+            {
+                imepanel = Ime.Text + " " + Prezime.Text;
+                ImePanel.Text = imepanel;
+            }
+        
+         
         }
 
         OpenFileDialog file = new OpenFileDialog();
@@ -79,5 +90,12 @@ namespace WindowsFormsApp3
             Process.Start(file.FileNames[index]);
 
         }
+
+
+
+
+
+
+
     }
 }

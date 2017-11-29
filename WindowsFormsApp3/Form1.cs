@@ -76,10 +76,8 @@ namespace WindowsFormsApp3
             CBGeneracija.SelectedIndex = 0;
             CBOdeljenje.Items.Add(defaultOdl);
             CBOdeljenje.SelectedIndex = 0;
-            Form3 form3 = new Form3();
-            form3.Show();
-            LoadCBGen();
-            Trazi();
+            //LoadCBGen();
+            //Trazi();
         }
         public void Trazi()
         {
@@ -207,20 +205,6 @@ namespace WindowsFormsApp3
             //ovo ti kao daje mogucnost da ogranicis rezultate pretrage, po odeljenjima
         }
 
-        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void TopPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void PrikazTabele_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -237,6 +221,11 @@ namespace WindowsFormsApp3
             
         }
 
-        
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+            this.OnLoad(e);
+        }
     }
 }

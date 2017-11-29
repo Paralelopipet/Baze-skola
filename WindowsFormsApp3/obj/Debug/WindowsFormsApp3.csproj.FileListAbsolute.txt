@@ -21,3 +21,4 @@ H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\
 H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
 H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojResolveAssemblyReference.cache
