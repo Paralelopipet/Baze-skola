@@ -93,9 +93,39 @@ namespace WindowsFormsApp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_forward_icon {
+            get {
+                object obj = ResourceManager.GetObject("arrow-forward-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrow_unazad {
+            get {
+                object obj = ResourceManager.GetObject("arrow unazad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blue_plus_sign_hi {
             get {
                 object obj = ResourceManager.GetObject("blue-plus-sign-hi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dark_purple_background_9527 {
+            get {
+                object obj = ResourceManager.GetObject("dark-purple-background-9527", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +173,29 @@ namespace WindowsFormsApp3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images2 {
+            get {
+                object obj = ResourceManager.GetObject("images2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap photo {
             get {
                 object obj = ResourceManager.GetObject("photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_add_icon {
+            get {
+                object obj = ResourceManager.GetObject("user-add-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

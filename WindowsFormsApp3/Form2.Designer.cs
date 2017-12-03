@@ -102,7 +102,7 @@
             this.label1.AllowDrop = true;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(287, 52);
+            this.label1.Location = new System.Drawing.Point(287, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(224, 21);
             this.label1.TabIndex = 9;
@@ -186,6 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(518, 399);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.SaveButton);

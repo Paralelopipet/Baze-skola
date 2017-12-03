@@ -30,11 +30,7 @@
         {
             this.TopPanel = new System.Windows.Forms.Panel();
             this.ImePanel = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.Prezime = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,7 +40,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Generacija = new System.Windows.Forms.TextBox();
             this.SviFajlovi = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.Sacuvaj = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -69,57 +70,16 @@
             this.ImePanel.Size = new System.Drawing.Size(0, 46);
             this.ImePanel.TabIndex = 11;
             // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.images1;
-            this.panel1.Location = new System.Drawing.Point(-19, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 142);
-            this.panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 148);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(274, 263);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Demi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(57, 417);
+            this.button1.Location = new System.Drawing.Point(68, 417);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(174, 39);
+            this.button1.Size = new System.Drawing.Size(174, 55);
             this.button1.TabIndex = 17;
             this.button1.Text = "Ucitaj sliku";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Franklin Gothic Demi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(237, 417);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(44, 39);
-            this.button2.TabIndex = 18;
-            this.button2.Text = ">";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Franklin Gothic Demi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(7, 417);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(44, 39);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "<";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Prezime
             // 
@@ -136,7 +96,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Franklin Gothic Demi", 15F, System.Drawing.FontStyle.Italic);
-            this.label4.Location = new System.Drawing.Point(565, 191);
+            this.label4.Location = new System.Drawing.Point(577, 191);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 25);
             this.label4.TabIndex = 26;
@@ -160,7 +120,7 @@
             this.Ime.Font = new System.Drawing.Font("Franklin Gothic Demi", 15F, System.Drawing.FontStyle.Italic);
             this.Ime.Location = new System.Drawing.Point(369, 219);
             this.Ime.Name = "Ime";
-            this.Ime.Size = new System.Drawing.Size(270, 30);
+            this.Ime.Size = new System.Drawing.Size(172, 30);
             this.Ime.TabIndex = 21;
             // 
             // Odeljenje
@@ -178,7 +138,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Demi", 15F, System.Drawing.FontStyle.Italic);
-            this.label1.Location = new System.Drawing.Point(565, 353);
+            this.label1.Location = new System.Drawing.Point(577, 353);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 25);
             this.label1.TabIndex = 30;
@@ -202,34 +162,92 @@
             this.Generacija.Font = new System.Drawing.Font("Franklin Gothic Demi", 15F, System.Drawing.FontStyle.Italic);
             this.Generacija.Location = new System.Drawing.Point(369, 381);
             this.Generacija.Name = "Generacija";
-            this.Generacija.Size = new System.Drawing.Size(270, 30);
+            this.Generacija.Size = new System.Drawing.Size(172, 30);
             this.Generacija.TabIndex = 28;
             // 
             // SviFajlovi
             // 
+            this.SviFajlovi.BackColor = System.Drawing.Color.MediumOrchid;
+            this.SviFajlovi.Cursor = System.Windows.Forms.Cursors.Default;
+            this.SviFajlovi.Font = new System.Drawing.Font("Franklin Gothic Demi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SviFajlovi.ForeColor = System.Drawing.SystemColors.MenuBar;
             this.SviFajlovi.FormattingEnabled = true;
-            this.SviFajlovi.ItemHeight = 20;
+            this.SviFajlovi.ItemHeight = 21;
             this.SviFajlovi.Location = new System.Drawing.Point(759, 219);
             this.SviFajlovi.Name = "SviFajlovi";
-            this.SviFajlovi.Size = new System.Drawing.Size(175, 204);
+            this.SviFajlovi.Size = new System.Drawing.Size(175, 193);
             this.SviFajlovi.TabIndex = 32;
             this.SviFajlovi.SelectedIndexChanged += new System.EventHandler(this.SviFajlovi_SelectedIndexChanged);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(508, 465);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 24);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Sacuvaj";
+            // 
             // Sacuvaj
             // 
-            this.Sacuvaj.Location = new System.Drawing.Point(422, 488);
+            this.Sacuvaj.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.icons8_save_50;
+            this.Sacuvaj.Location = new System.Drawing.Point(522, 492);
             this.Sacuvaj.Name = "Sacuvaj";
-            this.Sacuvaj.Size = new System.Drawing.Size(148, 39);
+            this.Sacuvaj.Size = new System.Drawing.Size(49, 49);
             this.Sacuvaj.TabIndex = 33;
-            this.Sacuvaj.Text = "Sacuvaj";
             this.Sacuvaj.UseVisualStyleBackColor = true;
             this.Sacuvaj.Click += new System.EventHandler(this.Sacuvaj_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.arrow_forward_icon;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Font = new System.Drawing.Font("Franklin Gothic Demi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(7, 417);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(55, 55);
+            this.button3.TabIndex = 19;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.arrow_unazad;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Font = new System.Drawing.Font("Franklin Gothic Demi", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(248, 417);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(55, 55);
+            this.button2.TabIndex = 18;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 148);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(296, 263);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.images1;
+            this.panel1.Location = new System.Drawing.Point(-19, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(322, 142);
+            this.panel1.TabIndex = 0;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 679);
+            this.ClientSize = new System.Drawing.Size(946, 577);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.Sacuvaj);
             this.Controls.Add(this.SviFajlovi);
             this.Controls.Add(this.Odeljenje);
@@ -277,5 +295,6 @@
         private System.Windows.Forms.TextBox Generacija;
         private System.Windows.Forms.ListBox SviFajlovi;
         private System.Windows.Forms.Button Sacuvaj;
+        private System.Windows.Forms.Label label5;
     }
 }

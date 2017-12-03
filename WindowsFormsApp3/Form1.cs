@@ -21,7 +21,7 @@ namespace WindowsFormsApp3
             InitializeComponent();
         }
 
-        
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -68,6 +68,7 @@ namespace WindowsFormsApp3
         
         private void Form1_Load(object sender, EventArgs e)
         {
+      
             CBGeneracija.Items.Add(defaultGen);
             CBGeneracija.SelectedIndex = 0;
             CBOdeljenje.Items.Add(defaultOdl);
@@ -224,6 +225,26 @@ namespace WindowsFormsApp3
         private void button1_Click_1(object sender, EventArgs e)
         {
             
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SidePanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

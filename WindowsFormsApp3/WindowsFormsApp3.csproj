@@ -133,5 +133,20 @@
   <ItemGroup>
     <None Include="Resources\icons8-save-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow unazad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-forward-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark-purple-background-9527.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-add-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
