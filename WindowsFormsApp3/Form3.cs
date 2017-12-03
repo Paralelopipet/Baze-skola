@@ -75,7 +75,7 @@ namespace WindowsFormsApp3
         int index = 0;
         bool selectedImage = false;
         Imenovanje imenovanje = new Imenovanje();
-        List<Image> sveSlike = new List<Image>();
+        Dictionary<string, Image> sveSlike = new Dictionary<string, Image>();
         Dictionary<string, string> dodatiFajlovi= new Dictionary<string, string>();
                
         private void button1_Click(object sender, EventArgs e)
@@ -90,7 +90,7 @@ namespace WindowsFormsApp3
                 tip = imenovanje.Get();
                 dodatiFajlovi.Add(tip, file.FileName);
                 SviFajlovi.Items.Add(tip);
-                sveSlike.Add(Image.FromFile(file.FileName));
+                sveSlike.Add(file.FileName,Image.FromFile(file.FileName));
                 //selectedImage = true;
                 //Image image1 = Image.FromFile(file.FileName, true);
                 PrikaziSliku(sveSlike.Count-1);
@@ -111,7 +111,7 @@ namespace WindowsFormsApp3
 
         private void pictureBox1_DoubleClick(object sender, EventArgs e)
         {
-            //Process.Start(sveSlike.ElementAt(index));
+            Process.Start(Application.StartupPath+"\\"+sveSlike.Keys.ElementAt(index));
             
         }
 
@@ -128,8 +128,8 @@ namespace WindowsFormsApp3
                 adapter.Fill(myTable);
                 for (int i = 0; i < myTable.Rows.Count; i++)
                 {
-                    Image s = Image.FromFile(lokacija + myTable.Rows[i][1].ToString().Replace(" ", "") + ".jpg");
-                    sveSlike.Add(s);
+                    string s = lokacija + myTable.Rows[i][1].ToString().Replace(" ", "") + ".jpg";
+                    sveSlike.Add(s,Image.FromFile(s));
                     SviFajlovi.Items.Add(myTable.Rows[i][0]);
                 }
                 SledSlika();
@@ -140,22 +140,24 @@ namespace WindowsFormsApp3
         }
         public void SledSlika()
         {
+            if (--index < 0)
+                index = sveSlike.Count - 1;
             if (sveSlike.Count == 0) return;
-            pictureBox1.Image=(sveSlike[index]);
-            if (--index <0)
-                index = sveSlike.Count-1;
+            pictureBox1.Image=(sveSlike.Values.ElementAt(index));
+            
         }
     public void ProslaSlika()
     {
-            if (sveSlike.Count == 0) return;
-        pictureBox1.Image=(sveSlike [index]);
-            if (++index > sveSlike.Count-1)
+            if (++index > sveSlike.Count - 1)
                 index = 0;
+            if (sveSlike.Count == 0) return;
+        pictureBox1.Image=(sveSlike.Values.ElementAt(index));
+            
     }
     public void PrikaziSliku(int i)
         {
             
-            pictureBox1.Image = (sveSlike.ElementAt(i));
+            pictureBox1.Image = (sveSlike.Values.ElementAt(i));
             index = i;
         }
         
