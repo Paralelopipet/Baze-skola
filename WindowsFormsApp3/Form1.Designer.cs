@@ -263,7 +263,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.WhatsApp_Image_2017_12_04_at_07_38_52;
+            this.panel2.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.slika;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(287, 0);

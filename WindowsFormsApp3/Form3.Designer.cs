@@ -30,6 +30,7 @@
         {
             this.TopPanel = new System.Windows.Forms.Panel();
             this.ImePanel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.Prezime = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +53,8 @@
             // TopPanel
             // 
             this.TopPanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.TopPanel.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.slika;
+            this.TopPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TopPanel.Controls.Add(this.ImePanel);
             this.TopPanel.Controls.Add(this.panel1);
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -64,11 +66,21 @@
             // ImePanel
             // 
             this.ImePanel.AutoSize = true;
+            this.ImePanel.BackColor = System.Drawing.Color.Transparent;
             this.ImePanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Italic);
+            this.ImePanel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ImePanel.Location = new System.Drawing.Point(335, 43);
             this.ImePanel.Name = "ImePanel";
             this.ImePanel.Size = new System.Drawing.Size(0, 46);
             this.ImePanel.TabIndex = 11;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.images1;
+            this.panel1.Location = new System.Drawing.Point(-19, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(322, 142);
+            this.panel1.TabIndex = 0;
             // 
             // button1
             // 
@@ -233,14 +245,6 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.images1;
-            this.panel1.Location = new System.Drawing.Point(-19, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(322, 142);
-            this.panel1.TabIndex = 0;
             // 
             // Form3
             // 

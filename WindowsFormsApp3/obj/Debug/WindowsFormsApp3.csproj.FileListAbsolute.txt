@@ -35,3 +35,16 @@ C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsForms
 C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
 C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Imenovanje.resources
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojResolveAssemblyReference.cache
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form3.resources
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Imenovanje.resources
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.Cache
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
