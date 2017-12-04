@@ -39,21 +39,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.Prezime = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.DodajUcenikaB = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.TopPanel = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.PrikazTabele = new System.Windows.Forms.DataGridView();
-            this.DodajUcenikaB = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.PrikazTabele = new System.Windows.Forms.DataGridView();
             label1 = new System.Windows.Forms.Label();
             this.SidePanel.SuspendLayout();
             this.TopPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PrikazTabele)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PrikazTabele)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -194,6 +194,16 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Sortiraj po:";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(48, 381);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(181, 24);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Dodaj novog ucenika";
+            // 
             // Prezime
             // 
             this.Prezime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -214,6 +224,21 @@
             this.label4.Size = new System.Drawing.Size(56, 17);
             this.label4.TabIndex = 13;
             this.label4.Text = "Prezime";
+            // 
+            // DodajUcenikaB
+            // 
+            this.DodajUcenikaB.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.user_add_icon;
+            this.DodajUcenikaB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.DodajUcenikaB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DodajUcenikaB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.DodajUcenikaB.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DodajUcenikaB.Location = new System.Drawing.Point(95, 420);
+            this.DodajUcenikaB.Name = "DodajUcenikaB";
+            this.DodajUcenikaB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.DodajUcenikaB.Size = new System.Drawing.Size(70, 61);
+            this.DodajUcenikaB.TabIndex = 8;
+            this.DodajUcenikaB.UseVisualStyleBackColor = true;
+            this.DodajUcenikaB.Click += new System.EventHandler(this.button5_Click);
             // 
             // label3
             // 
@@ -236,43 +261,9 @@
             this.TopPanel.Size = new System.Drawing.Size(1032, 137);
             this.TopPanel.TabIndex = 13;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(48, 381);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 24);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Dodaj novog ucenika";
-            // 
-            // PrikazTabele
-            // 
-            this.PrikazTabele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PrikazTabele.Location = new System.Drawing.Point(305, 159);
-            this.PrikazTabele.Name = "PrikazTabele";
-            this.PrikazTabele.Size = new System.Drawing.Size(696, 470);
-            this.PrikazTabele.TabIndex = 14;
-            this.PrikazTabele.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PrikazTabele_CellContentClick);
-            // 
-            // DodajUcenikaB
-            // 
-            this.DodajUcenikaB.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.user_add_icon;
-            this.DodajUcenikaB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.DodajUcenikaB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DodajUcenikaB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.DodajUcenikaB.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DodajUcenikaB.Location = new System.Drawing.Point(95, 420);
-            this.DodajUcenikaB.Name = "DodajUcenikaB";
-            this.DodajUcenikaB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.DodajUcenikaB.Size = new System.Drawing.Size(70, 61);
-            this.DodajUcenikaB.TabIndex = 8;
-            this.DodajUcenikaB.UseVisualStyleBackColor = true;
-            this.DodajUcenikaB.Click += new System.EventHandler(this.button5_Click);
-            // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.dark_purple_background_9527;
+            this.panel2.BackgroundImage = global::WindowsFormsApp3.Properties.Resources.WhatsApp_Image_2017_12_04_at_07_38_52;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(287, 0);
@@ -301,6 +292,15 @@
             this.panel1.Size = new System.Drawing.Size(308, 142);
             this.panel1.TabIndex = 0;
             // 
+            // PrikazTabele
+            // 
+            this.PrikazTabele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PrikazTabele.Location = new System.Drawing.Point(305, 159);
+            this.PrikazTabele.Name = "PrikazTabele";
+            this.PrikazTabele.Size = new System.Drawing.Size(696, 470);
+            this.PrikazTabele.TabIndex = 14;
+            this.PrikazTabele.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PrikazTabele_CellContentClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,9 +317,9 @@
             this.SidePanel.ResumeLayout(false);
             this.SidePanel.PerformLayout();
             this.TopPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PrikazTabele)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PrikazTabele)).EndInit();
             this.ResumeLayout(false);
 
         }

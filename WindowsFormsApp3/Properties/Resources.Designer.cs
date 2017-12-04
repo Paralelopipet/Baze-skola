@@ -199,5 +199,15 @@ namespace WindowsFormsApp3.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2017_12_04_at_07_38_52 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2017-12-04 at 07.38.52", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
