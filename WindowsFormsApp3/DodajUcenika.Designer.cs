@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp3
 {
-    partial class Form2
+    partial class DodajUcenika
     {
         /// <summary>
         /// Required designer variable.
@@ -41,6 +41,7 @@
             this.CBOdeljenje = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.SaveButton = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.TopPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -182,12 +183,24 @@
             this.SaveButton.UseVisualStyleBackColor = false;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // Form2
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Location = new System.Drawing.Point(6, 377);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(512, 13);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Program realizovali: Damjan Denic, Dimitrijevic Djordje, Ivan Pop-Jovanov, Andrij" +
+    "a Jelenkovic, Mihailo Grbic";
+            // 
+            // DodajUcenika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(518, 399);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.CBOdeljenje);
@@ -199,7 +212,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.Ime);
-            this.Name = "Form2";
+            this.Name = "DodajUcenika";
             this.Text = "Dodaj novog ucenika";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.TopPanel.ResumeLayout(false);
@@ -223,5 +236,6 @@
         private System.Windows.Forms.ComboBox CBOdeljenje;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
     }
 }

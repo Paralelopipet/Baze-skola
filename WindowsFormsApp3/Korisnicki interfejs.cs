@@ -57,7 +57,7 @@ namespace WindowsFormsApp3
         {  
 
             //ovo bi trebalo da kada stisnes na celiju gde pise necije ime ili prezime da ti otvori novu formu koja te vodi da vidis njegove slike
-            Form2 frm = new Form2();
+            DodajUcenika frm = new DodajUcenika();
             frm.Show();
         }
 
@@ -151,7 +151,7 @@ namespace WindowsFormsApp3
         private void button5_Click(object sender, EventArgs e)
         {
 
-            Form2 Form2 = new Form2();
+            DodajUcenika Form2 = new DodajUcenika();
             Form2.ShowDialog();
             this.OnLoad(e);
             //ovo se aps ne secam sta treba da radi, pitacemo grbica..
@@ -216,7 +216,7 @@ namespace WindowsFormsApp3
             }
             }
             
-            Form3 form3 = new Form3(row);
+            Slike form3 = new Slike(row);
             form3.ShowDialog();
             this.OnLoad(e);
 

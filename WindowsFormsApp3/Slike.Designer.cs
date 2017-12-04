@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp3
 {
-    partial class Form3
+    partial class Slike
     {
         /// <summary>
         /// Required designer variable.
@@ -46,6 +46,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -185,9 +187,9 @@
             this.SviFajlovi.ForeColor = System.Drawing.SystemColors.MenuBar;
             this.SviFajlovi.FormattingEnabled = true;
             this.SviFajlovi.ItemHeight = 21;
-            this.SviFajlovi.Location = new System.Drawing.Point(759, 219);
+            this.SviFajlovi.Location = new System.Drawing.Point(757, 252);
             this.SviFajlovi.Name = "SviFajlovi";
-            this.SviFajlovi.Size = new System.Drawing.Size(175, 193);
+            this.SviFajlovi.Size = new System.Drawing.Size(173, 151);
             this.SviFajlovi.TabIndex = 32;
             this.SviFajlovi.SelectedIndexChanged += new System.EventHandler(this.SviFajlovi_SelectedIndexChanged);
             // 
@@ -246,11 +248,35 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
             // 
-            // Form3
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Franklin Gothic Demi", 10F, System.Drawing.FontStyle.Italic);
+            this.label6.Location = new System.Drawing.Point(754, 219);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(159, 18);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "Tipovi slika koji postoje:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label8.Location = new System.Drawing.Point(434, 555);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(512, 13);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "Program realizovali: Damjan Denic, Dimitrijevic Djordje, Ivan Pop-Jovanov, Andrij" +
+    "a Jelenkovic, Mihailo Grbic";
+            // 
+            // Slike
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(946, 577);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Sacuvaj);
             this.Controls.Add(this.SviFajlovi);
@@ -270,7 +296,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form3";
+            this.Name = "Slike";
             this.Text = "Dodaj sliku";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.TopPanel.ResumeLayout(false);
@@ -300,5 +326,7 @@
         private System.Windows.Forms.ListBox SviFajlovi;
         private System.Windows.Forms.Button Sacuvaj;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
     }
 }

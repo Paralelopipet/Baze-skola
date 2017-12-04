@@ -49,6 +49,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PrikazTabele = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             this.SidePanel.SuspendLayout();
             this.TopPanel.SuspendLayout();
@@ -70,9 +71,9 @@
             // 
             this.Search.BackColor = System.Drawing.SystemColors.Menu;
             this.Search.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Search.Location = new System.Drawing.Point(95, 301);
+            this.Search.Location = new System.Drawing.Point(106, 293);
             this.Search.Name = "Search";
-            this.Search.Size = new System.Drawing.Size(81, 38);
+            this.Search.Size = new System.Drawing.Size(87, 38);
             this.Search.TabIndex = 0;
             this.Search.Text = "SEARCH";
             this.Search.UseVisualStyleBackColor = false;
@@ -198,7 +199,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Franklin Gothic Demi", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(48, 381);
+            this.label5.Location = new System.Drawing.Point(64, 351);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(181, 24);
             this.label5.TabIndex = 9;
@@ -232,10 +233,10 @@
             this.DodajUcenikaB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DodajUcenikaB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.DodajUcenikaB.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DodajUcenikaB.Location = new System.Drawing.Point(95, 420);
+            this.DodajUcenikaB.Location = new System.Drawing.Point(106, 392);
             this.DodajUcenikaB.Name = "DodajUcenikaB";
             this.DodajUcenikaB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.DodajUcenikaB.Size = new System.Drawing.Size(70, 61);
+            this.DodajUcenikaB.Size = new System.Drawing.Size(87, 87);
             this.DodajUcenikaB.TabIndex = 8;
             this.DodajUcenikaB.UseVisualStyleBackColor = true;
             this.DodajUcenikaB.Click += new System.EventHandler(this.button5_Click);
@@ -301,6 +302,17 @@
             this.PrikazTabele.TabIndex = 14;
             this.PrikazTabele.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PrikazTabele_CellContentClick);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Location = new System.Drawing.Point(489, 632);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(512, 13);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Program realizovali: Damjan Denic, Dimitrijevic Djordje, Ivan Pop-Jovanov, Andrij" +
+    "a Jelenkovic, Mihailo Grbic";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,6 +320,7 @@
             this.BackColor = System.Drawing.Color.DarkGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1032, 684);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.PrikazTabele);
             this.Controls.Add(this.SidePanel);
             this.Controls.Add(this.TopPanel);
@@ -321,6 +334,7 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PrikazTabele)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -346,6 +360,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
     }
 }
 

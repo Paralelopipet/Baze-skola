@@ -13,7 +13,7 @@ using System.IO;
 
 namespace WindowsFormsApp3
 {
-    public partial class Form3 : Form
+    public partial class Slike : Form
     {
         static string lokacija = @"lokacija/";
         string connectionString = "Data Source=NAJKOMP\\DATA;Initial Catalog=Skola;Integrated Security=True";
@@ -24,7 +24,7 @@ namespace WindowsFormsApp3
         string odeljenje;
         string sifra;
         int nextIdFajla;
-        public Form3(List<String> row)
+        public Slike(List<String> row)
         {
             this.row = row;
             sifra = row[0];

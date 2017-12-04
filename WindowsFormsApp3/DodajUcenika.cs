@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp3
 {
-    public partial class Form2 : Form
+    public partial class DodajUcenika : Form
     {
         string connectionString = "Data Source=NAJKOMP\\DATA;Initial Catalog=Skola;Integrated Security=True";
         public static string defaultGen = "Generacija ";
@@ -21,7 +21,7 @@ namespace WindowsFormsApp3
         string sql = "SELECT Ime, Prezime, Generacija, Odeljenje.Naziv  FROM Ucenici INNER JOIN Odeljenje ON Odeljenje.ID = Ucenici.IDOdeljenja";
 
 
-        public Form2()
+        public DodajUcenika()
         {
             InitializeComponent();
         }
