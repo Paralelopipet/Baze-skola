@@ -13,7 +13,7 @@ namespace WindowsFormsApp3
 {
     public partial class DodajUcenika : Form
     {
-        string connectionString = "Data Source=NAJKOMP\\DATA;Initial Catalog=Skola;Integrated Security=True";
+        string connectionString = "Data Source=DESKTOP-8522DN1\\SQLEXPRESS ;Initial Catalog=Skola;Integrated Security=True";
         public static string defaultGen = "Generacija ";
         static string defaultOdl = "Odeljenje ";
         //string sortBy = "Ime";
@@ -139,7 +139,7 @@ namespace WindowsFormsApp3
                 adapter.Fill(myTable);
                 for (int i = 0; i < myTable.Rows.Count; i++)
                 {
-                    CBGeneracija.Items.Add(myTable.Rows[i][0].ToString());
+                    CBGeneracija.Items.Add(myTable.Rows[i][0].ToString().Replace(" ",""));
                 }
                 //PrikazTabele.DataSource = myTable;
                 //PrikazTabele.Columns["ID"].Visible = false;

@@ -48,3 +48,16 @@ C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.c
 C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
 C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojResolveAssemblyReference.cache
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.DodajUcenika.resources
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Slike.resources
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Imenovanje.resources
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.Cache
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+E:\Projekat Baze\Baze-skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb

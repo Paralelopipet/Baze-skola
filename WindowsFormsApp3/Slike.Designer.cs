@@ -36,10 +36,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Ime = new System.Windows.Forms.TextBox();
-            this.Odeljenje = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Generacija = new System.Windows.Forms.TextBox();
             this.SviFajlovi = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Sacuvaj = new System.Windows.Forms.Button();
@@ -48,6 +46,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.CBGeneracija = new System.Windows.Forms.ComboBox();
+            this.CBOdeljenje = new System.Windows.Forms.ComboBox();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -137,17 +137,6 @@
             this.Ime.Size = new System.Drawing.Size(172, 30);
             this.Ime.TabIndex = 21;
             // 
-            // Odeljenje
-            // 
-            this.Odeljenje.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Odeljenje.Font = new System.Drawing.Font("Franklin Gothic Demi", 15F, System.Drawing.FontStyle.Italic);
-            this.Odeljenje.Location = new System.Drawing.Point(547, 381);
-            this.Odeljenje.Name = "Odeljenje";
-            this.Odeljenje.Size = new System.Drawing.Size(172, 30);
-            this.Odeljenje.TabIndex = 31;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -167,17 +156,6 @@
             this.label2.Size = new System.Drawing.Size(107, 25);
             this.label2.TabIndex = 29;
             this.label2.Text = "Generacija";
-            // 
-            // Generacija
-            // 
-            this.Generacija.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Generacija.Font = new System.Drawing.Font("Franklin Gothic Demi", 15F, System.Drawing.FontStyle.Italic);
-            this.Generacija.Location = new System.Drawing.Point(369, 381);
-            this.Generacija.Name = "Generacija";
-            this.Generacija.Size = new System.Drawing.Size(172, 30);
-            this.Generacija.TabIndex = 28;
             // 
             // SviFajlovi
             // 
@@ -270,20 +248,36 @@
             this.label8.Text = "Program realizovali: Damjan Denic, Dimitrijevic Djordje, Ivan Pop-Jovanov, Andrij" +
     "a Jelenkovic, Mihailo Grbic";
             // 
+            // CBGeneracija
+            // 
+            this.CBGeneracija.FormattingEnabled = true;
+            this.CBGeneracija.Location = new System.Drawing.Point(369, 383);
+            this.CBGeneracija.Name = "CBGeneracija";
+            this.CBGeneracija.Size = new System.Drawing.Size(172, 28);
+            this.CBGeneracija.TabIndex = 37;
+            // 
+            // CBOdeljenje
+            // 
+            this.CBOdeljenje.FormattingEnabled = true;
+            this.CBOdeljenje.Location = new System.Drawing.Point(547, 381);
+            this.CBOdeljenje.Name = "CBOdeljenje";
+            this.CBOdeljenje.Size = new System.Drawing.Size(172, 28);
+            this.CBOdeljenje.TabIndex = 38;
+            // 
             // Slike
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(946, 577);
+            this.Controls.Add(this.CBOdeljenje);
+            this.Controls.Add(this.CBGeneracija);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Sacuvaj);
             this.Controls.Add(this.SviFajlovi);
-            this.Controls.Add(this.Odeljenje);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.Generacija);
             this.Controls.Add(this.Prezime);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -319,14 +313,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Ime;
-        private System.Windows.Forms.TextBox Odeljenje;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Generacija;
         private System.Windows.Forms.ListBox SviFajlovi;
         private System.Windows.Forms.Button Sacuvaj;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox CBGeneracija;
+        private System.Windows.Forms.ComboBox CBOdeljenje;
     }
 }

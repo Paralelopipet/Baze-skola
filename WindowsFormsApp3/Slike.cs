@@ -16,7 +16,7 @@ namespace WindowsFormsApp3
     public partial class Slike : Form
     {
         static string lokacija = @"lokacija/";
-        string connectionString = "Data Source=NAJKOMP\\DATA;Initial Catalog=Skola;Integrated Security=True";
+        string connectionString = "Data Source=DESKTOP-8522DN1\\SQLEXPRESS ;Initial Catalog=Skola;Integrated Security=True";
         List<String> row;
         string ime;
         string prezime;
@@ -35,6 +35,53 @@ namespace WindowsFormsApp3
             InitializeComponent();
         }
 
+
+        private void LoadCBGeneracija()
+        {
+            CBGeneracija.Items.Clear();
+            string sql = "SELECT Generacija FROM Skola.dbo.Odeljenje GROUP BY Generacija ORDER BY Generacija ASC";
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = new SqlCommand(sql, connection))
+            using (var adapter = new SqlDataAdapter(command))
+            {
+                connection.Open();
+                var myTable = new DataTable();
+                adapter.Fill(myTable);
+                for (int i = 0; i < myTable.Rows.Count; i++)
+                {
+                    string gen = myTable.Rows[i][0].ToString().Replace(" ",""); //mora ovaj replace, jer je u bazi sacuvano sa razmacima, pa ce equal uvek da pokazuje false
+                    CBGeneracija.Items.Add(gen);
+
+                    //postavlja na selected Item onaj koji je jednak generaciji ucenika
+                    if (generacija.Equals(gen))
+                    {
+                        CBGeneracija.SelectedIndex = i;
+                    }
+                }
+                
+                //PrikazTabele.DataSource = myTable;
+                //PrikazTabele.Columns["ID"].Visible = false;
+                connection.Close();
+
+            }
+        }
+
+
+        private void LoadCBOdeljenje()
+        {
+            CBOdeljenje.Items.Clear();
+            
+            CBOdeljenje.Items.Add("A");
+            CBOdeljenje.Items.Add("B");
+            CBOdeljenje.Items.Add("C");
+            CBOdeljenje.Items.Add("D");
+            CBOdeljenje.Items.Add("E");
+
+            //postavlja na selected Item onaj koji je jednak odeljenju ucenika
+            CBOdeljenje.SelectedIndex = CBOdeljenje.FindStringExact(odeljenje);
+
+        }
+
         private void SidePanel_Paint(object sender, PaintEventArgs e)
         {
 
@@ -48,8 +95,13 @@ namespace WindowsFormsApp3
             ImePanel.Text = "Ime Prezime";
             Ime.Text = ime;
             Prezime.Text = prezime;
-            Generacija.Text = generacija;
-            Odeljenje.Text = odeljenje;
+            //Generacija.Text = generacija;
+            //Odeljenje.Text = odeljenje;
+
+            LoadCBGeneracija();
+            LoadCBOdeljenje();
+
+
             if (Ime.Text != "" && Prezime.Text != "")
             {
                 imepanel = Ime.Text + " " + Prezime.Text;
@@ -96,6 +148,7 @@ namespace WindowsFormsApp3
                 PrikaziSliku(sveSlike.Count-1);
             }
         }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -167,13 +220,35 @@ namespace WindowsFormsApp3
             PrikaziSliku(SviFajlovi.SelectedIndex);
         }
 
-        private void Sacuvaj_Click(object sender, EventArgs e)
+        
+        private string getIDOdeljenja(string cBGen, string cBOdl)
         {
-            
-            foreach (var item in dodatiFajlovi)
+        pocetak:
+            string generacija;
+            string odeljenje;
+            string iD;
+            string sql = "SELECT ID, Naziv,Generacija FROM Skola.dbo.Odeljenje WHERE Generacija=" + cBGen + " AND Naziv='" + cBOdl + "'";
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = new SqlCommand(sql, connection))
+            using (var adapter = new SqlDataAdapter(command))
             {
-            File.Copy(item.Value, lokacija+nextIdFajla.ToString() + "_"+ item.Key+".jpg");
-            string sql = "INSERT INTO Skola.dbo.Fajlovi (Ime,Vrsta) VALUES ('" + nextIdFajla.ToString()+"_"+item.Key + "','" + item.Key + "')";
+                connection.Open();
+
+                var myTable = new DataTable();
+                adapter.Fill(myTable);
+                if (myTable.Rows.Count > 0)
+                {
+                    iD = myTable.Rows[0][0].ToString();
+                    connection.Close();
+                    return iD;
+                }
+                //PrikazTabele.DataSource = myTable;
+                //PrikazTabele.Columns["ID"].Visible = false;
+                connection.Close();
+            }
+
+
+            sql = "INSERT INTO Skola.dbo.Odeljenje (Naziv,Generacija) VALUES ('" + cBOdl + "','" + cBGen + "')";
             using (var connection = new SqlConnection(connectionString))
             using (var command = new SqlCommand(sql, connection))
             {
@@ -181,9 +256,53 @@ namespace WindowsFormsApp3
                 command.ExecuteNonQuery();
                 connection.Close();
             }
-            sql = "INSERT INTO Skola.dbo.VezeUc (SifraUc,IDFajl) VALUES ('" + sifra + "','" + nextIdFajla + "')";
+            goto pocetak;
+
+        }
+
+        private void Sacuvaj_Click(object sender, EventArgs e)
+        {
+            //treba odraditi check-ove lepe za ovo, tipa da ne dodje neko i upise XYZ za generaciju itd.
+            string imeUpdated = Ime.Text;
+            string prezimeUpdated = Prezime.Text;
+            string CBOdlUpdated = CBOdeljenje.SelectedItem.ToString();
+            string CBGenUpdated = CBGeneracija.Text.ToString();
+
+            if (imeUpdated == "" || prezimeUpdated == "" || CBOdlUpdated == "" || CBGenUpdated == "")
+            {
+                MessageBox.Show("Unesite podatke u sva polja");
+                return;
+            }
+
+            //UPDATE ucenika
+            string sql1 = "UPDATE Skola.dbo.Ucenici SET Ime='" + imeUpdated +"'," +
+                                                        "Prezime='" + prezimeUpdated + "'," +
+                                                        "IDOdeljenja=" + getIDOdeljenja(CBGenUpdated, CBOdlUpdated)+
+                            "WHERE Sifra= " + sifra +";";
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = new SqlCommand(sql1, connection))
+            {
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+            
+        
+            
+            foreach (var item in dodatiFajlovi)
+            {
+            File.Copy(item.Value, lokacija+nextIdFajla.ToString() + "_"+ item.Key+".jpg");
+            string sql2 = "INSERT INTO Skola.dbo.Fajlovi (Ime,Vrsta) VALUES ('" + nextIdFajla.ToString()+"_"+item.Key + "','" + item.Key + "')";
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = new SqlCommand(sql2, connection))
+            {
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+            sql2 = "INSERT INTO Skola.dbo.VezeUc (SifraUc,IDFajl) VALUES ('" + sifra + "','" + nextIdFajla + "')";
                 using (var connection = new SqlConnection(connectionString))
-                using (var command = new SqlCommand(sql, connection))
+                using (var command = new SqlCommand(sql2, connection))
                 {
                     connection.Open();
                     command.ExecuteNonQuery();
@@ -191,8 +310,9 @@ namespace WindowsFormsApp3
                 }
                 nextIdFajla++;
             }
+            MessageBox.Show("Uspesno ste sacuvali ucenika " + imeUpdated + " " + prezimeUpdated);
             this.Close();
-
+            
         }
 
         

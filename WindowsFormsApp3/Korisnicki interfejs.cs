@@ -10,7 +10,7 @@ namespace WindowsFormsApp3
     public partial class Form1 : Form
     {
         DataTable myTable;
-        string connectionString = "Data Source=NAJKOMP\\DATA;Initial Catalog=Skola;Integrated Security=True";
+        string connectionString = "Data Source=DESKTOP-8522DN1\\SQLEXPRESS;Initial Catalog=Skola;Integrated Security=True";
         public static string defaultGen = "Generacija ";
         static string defaultOdl = "Odeljenje ";
         string sortBy = "Ucenici.Ime";
@@ -54,7 +54,7 @@ namespace WindowsFormsApp3
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {  
+        {
 
             //ovo bi trebalo da kada stisnes na celiju gde pise necije ime ili prezime da ti otvori novu formu koja te vodi da vidis njegove slike
             DodajUcenika frm = new DodajUcenika();
