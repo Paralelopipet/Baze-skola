@@ -1,0 +1,13 @@
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\obj\Debug\Arhiva.csproj.GenerateResource.Cache
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\obj\Debug\Arhiva.csproj.CoreCompileInputs.cache
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\bin\Debug\Arhiva.exe.config
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\bin\Debug\Arhiva.exe
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\bin\Debug\Arhiva.pdb
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\obj\Debug\Arhiva.Form1.resources
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\obj\Debug\Arhiva.DodajUcenika.resources
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\obj\Debug\Arhiva.Slike.resources
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\obj\Debug\Arhiva.Imenovanje.resources
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\obj\Debug\Arhiva.Properties.Resources.resources
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\obj\Debug\Arhiva.exe
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\obj\Debug\Arhiva.pdb
+C:\Users\hpz9c68ea\source\repos\Baze-skola3\WindowsFormsApp3\obj\Debug\Arhiva.UnosKonekcionogStringa.resources

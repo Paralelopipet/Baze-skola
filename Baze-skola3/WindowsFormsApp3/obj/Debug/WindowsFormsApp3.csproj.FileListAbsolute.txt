@@ -1,0 +1,63 @@
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form3.resources
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.Cache
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojResolveAssemblyReference.cache
+H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form3.resources
+H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.Cache
+H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+H:\Downloads\userDownloads\drive-download-20171128T213136Z-001\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\hpz9c68ea\Desktop\Projekat baze\Projekat Git\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojResolveAssemblyReference.cache
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojResolveAssemblyReference.cache
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form3.resources
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.Cache
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\Damjan\Desktop\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Imenovanje.resources
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojResolveAssemblyReference.cache
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form2.resources
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form3.resources
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Imenovanje.resources
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.Cache
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\Damjan\Desktop\Baze skola\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojResolveAssemblyReference.cache
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.DodajUcenika.resources
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Slike.resources
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Imenovanje.resources
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.Cache
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\hpz9c68ea\Source\Repos\Baze-skola3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
